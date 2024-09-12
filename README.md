@@ -1,13 +1,5 @@
 To implement **client-side search** using JavaScript, we can write a function that searches through the content of each page and highlights the search terms. This approach allows users to search for text that is present in the current HTML document, and the results will be highlighted.
 
-Here's how to achieve that:
-
-### Steps:
-1. Add a search input and button (already done in your previous request).
-2. Write JavaScript to capture the search query and highlight matching terms within the content.
-3. Highlight the search term on the page.
-
-### Updated Files:
 
 #### 1. **HTML Structure (for all pages)**
 
