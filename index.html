@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Search Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">My Website</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search..." />
+            <button onclick="searchFunction()" id="searchButton"><i class="fas fa-search"></i></button>
+        </div>
+        <i class="fas fa-bars menu-icon"></i>
+    </nav>
+</header>
+
+<div class="content">
+    <h2>About Us</h2>
+    <p>We are a web development company...</p>
+    
+    <h2>Our Services</h2>
+    <p>We offer a variety of services including web development, mobile app development...</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out...</p>
+</div>
+
+<div class="results" id="searchResults"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

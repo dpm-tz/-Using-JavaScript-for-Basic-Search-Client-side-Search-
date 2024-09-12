@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #222;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-container input[type="text"] {
+    padding: 7px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    display: block;
+}
+.search-container button {
+    padding: 7px;
+    font-size: 16px;
+    border: none;
+    background-color: #fff;
+    color: #4CAF50;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+.search-container button:hover {
+    background-color: #eee;
+}
+.menu-icon {
+    font-size: 28px;
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    nav .menu-icon {
+        display: block;
+    }
+    nav.active ul {
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        text-align: center;
+    }
+    nav.active ul li {
+        margin: 15px 0;
+    }
+    .search-container input[type="text"] {
+        display: none;
+    }
+    .search-container.active input[type="text"] {
+        display: block;
+        width: 150px;
+        margin-left: 5px;
+    }
+}
+
+/* Highlight the search term */
+.highlight {
+    background-color: yellow;
+    color: black;
+}
+
+/* Basic styling for search */
+.search-container input {
+    padding: 8px;
+    width: 200px;
+}
+
+.search-container button {
+    padding: 8px;
+}
+
