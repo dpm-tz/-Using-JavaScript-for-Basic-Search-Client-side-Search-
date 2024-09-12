@@ -5,13 +5,12 @@ To implement **client-side search** using JavaScript, we can write a function th
 
 Add the following structure to all of your HTML files where you want the search functionality to be applied.
 
-```html
-<!DOCTYPE html>
+```<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <title>Responsive Search Website</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -35,15 +34,14 @@ Add the following structure to all of your HTML files where you want the search 
 </header>
 
 <div class="content">
+    <h2>About Us</h2>
+    <p>We are a web development company...</p>
+    
     <h2>Our Services</h2>
-    <p>We offer a wide range of services to cater to your needs, including:</p>
-    <ul>
-        <li>Web Development</li>
-        <li>Mobile App Development</li>
-        <li>SEO and Digital Marketing</li>
-        <li>Cloud Computing</li>
-        <li>Custom Software Solutions</li>
-    </ul>
+    <p>We offer a variety of services including web development, mobile app development...</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out...</p>
 </div>
 
 <div class="results" id="searchResults"></div>
@@ -54,7 +52,7 @@ Add the following structure to all of your HTML files where you want the search 
 </html>
 ```
 
-#### 2. **CSS for Highlighting (style.css)**
+#### 2. **style.css**
 Add the following CSS to highlight the matching search results.
 
 ```css
